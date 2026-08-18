@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Idiathub 3.0</title>
+    <title>zetube</title>
     <style>
         @font-face {
             font-family: 'CustomFont';
@@ -89,7 +89,7 @@
 
     <div id="authScreen">
         <div class="auth-box" id="loginForm">
-            <h2>Вход в Idiathub</h2>
+            <h2>Вход в zetube</h2>
             <input type="text" id="loginUser" placeholder="Логин (Имя)">
             <input type="password" id="loginPass" placeholder="Пароль">
             <button class="btn" id="btnLoginAction">Войти</button>
@@ -289,7 +289,7 @@
             } catch(e) { alert("Ошибка: " + e.message); }
         }
 
-        function logOut() { localStorage.removeItem('idiathub_user'); location.reload(); }
+        function logOut() { localStorage.removeItem('gotube_user'); location.reload(); }
         
         async function deleteAccount() {
             if(!confirm('Точно удалить свой аккаунт?')) return;
